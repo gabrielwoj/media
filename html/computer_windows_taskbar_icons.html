@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Windows Taskbar Icons</title>
+        <link href="../dist/css/lightgallery.css" rel="stylesheet">
+        <style type="text/css">
+            body{
+                background-color: #1F2127
+            }
+			.demo-gallery > ul > li a:hover > img {
+				opacity: 0.75;
+				border-bottom: 7px solid #B52DFF;
+				position: relative;
+				margin-bottom: 7px;
+			}
+            .demo-gallery > ul > li {
+                margin-left: 15px;
+				float: left;
+                margin-bottom: 204px;
+				display: relative;
+                margin-right: 5px;
+                width: 184px;
+            }
+            .demo-gallery > ul > li a {
+              display: block;
+              overflow: hidden;
+              position: absolute;
+            }
+            .demo-gallery > ul > li a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 184px;
+              width: 184px;
+            }
+            .demo-gallery > ul > li a:hover > img {
+				
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+              height: 48px;
+              margin-left: -24px;
+              margin-top: -24px;
+              opacity: 0.8;
+              width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+              border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+              padding-bottom: 80px;
+            }
+			ul {
+			list-style: none;
+			}
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body class="home">
+        <div class="demo-gallery">
+		<a href="main"><<< Home Page</a>
+		<center>
+		This section contains customized icons for the Windows Taskbar (or other places such as the Desktop). Clicking on an icon will enlarge the image and show a bigger preview for the icon. 
+		<br>
+		To download the icon in .ico format, you can click on the download button located at the top-right corner of the screen (when previewing).
+		<br>
+		Each icon has different available icon sizes, however, all of them work for the Taskbar while having the "Use small icons" option enabled.
+		<hr>
+		</center>
+            <ul id="lightgallery">	
+			<li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/Template.png" data-sub-html="<b>Template</b><br>There is no available .ico file for the Template.">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/Template.png">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/World of Warcraft.png" data-download-url="computer_windows_taskbar_icons_files/World of Warcraft.ico" data-sub-html="<b>Icon for World of Warcraft</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/World of Warcraft.png">
+                    </a>
+                </li>
+				<li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/Vivaldi.png" data-download-url="computer_windows_taskbar_icons_files/Vivaldi.ico" data-sub-html="<b>Icon for Vivaldi</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/Vivaldi.png">
+                    </a>
+                </li>	
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/Windows Explorer.png" data-download-url="computer_windows_taskbar_icons_files/Windows Explorer.ico" data-sub-html="<b>Icon for Windows Explorer</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/Windows Explorer.png">
+                    </a>
+                </li>				
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/Team Fortress 2.png" data-download-url="computer_windows_taskbar_icons_files/game.ico" data-sub-html="<b>Icon for Team Fortress 2</b><br>Available sizes: 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).<br><br><b>Extra notes:</b> Save the icon at <b>'Steam\SteamApps\common\Team Fortress 2\tf\custom\resource'</b><br>under the name <b>'game.ico'</b> to always use this icon without having to pin the game to the taskbar.">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/Team Fortress 2.png">
+                    </a>
+                </li>			
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/Steam.png" data-download-url="computer_windows_taskbar_icons_files/Steam.ico" data-sub-html="<b>Icon for Steam</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/Steam.png">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/Paint.net.png" data-download-url="computer_windows_taskbar_icons_files/Paint.net.ico" data-sub-html="<b>Icon for Paint.NET</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/Paint.net.png">
+                    </a>
+                </li>				
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/Opera.png" data-download-url="computer_windows_taskbar_icons_files/Opera.ico" data-sub-html="<b>Icon for Opera</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/Opera.png">
+                    </a>
+                </li>					
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/Opera Next.png" data-download-url="computer_windows_taskbar_icons_files/Opera Next.ico" data-sub-html="<b>Icon for Opera Next</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/Opera Next.png">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/GIMP.png" data-download-url="computer_windows_taskbar_icons_files/GIMP.ico" data-sub-html="<b>Icon for GIMP</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/GIMP.png">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/foobar2000.png" data-download-url="computer_windows_taskbar_icons_files/foobar2000.ico" data-sub-html="<b>Icon for foobar2000</b><br>Available sizes: 256x256 (32-bit), 128x128 (32-bit), 64x64 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 24x24 (32-bit), 16x16 (32-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/foobar2000.png">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/Firefox.png" data-download-url="computer_windows_taskbar_icons_files/Firefox.ico" data-sub-html="<b>Icon for Firefox</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/Firefox.png">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="computer_windows_taskbar_icons_img/BrawlBox.png" data-download-url="computer_windows_taskbar_icons_files/BrawlBox.ico" data-sub-html="<b>Icon for BrawlBox</b><br>Available sizes: 256x256 (32-bit), 48x48 (32-bit), 32x32 (32-bit), 16x16 (32-bit), 48x48 (8-bit), 32x32 (8-bit), 16x16 (8-bit), 32x32 (4-bit), 16x16 (4-bit).">
+                    <a href="">
+                        <img class="img-responsive" src="computer_windows_taskbar_icons_img/BrawlBox.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="../dist/js/lightgallery-all.min.js"></script>
+        <script src="../lib/jquery.mousewheel.min.js"></script>
+    </body>
+</html>

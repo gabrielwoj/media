@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sprays</title>
+        <link href="../dist/css/lightgallery.css" rel="stylesheet">
+        <style type="text/css">
+            body{
+                background-color: #1F2127
+            }
+			.demo-gallery > ul > li a:hover > img {
+				opacity: 0.75;
+				border-bottom: 7px solid #FF9D47;
+				position: relative;
+				margin-bottom: 7px;
+			}
+            .demo-gallery > ul > li {
+                margin-left: 15px;
+				float: left;
+                margin-bottom: 300px;
+				display: relative;
+                margin-right: 175px;
+                width: 120px;
+            }
+            .demo-gallery > ul > li a {
+              display: block;
+              overflow: hidden;
+              position: absolute;
+            }
+            .demo-gallery > ul > li a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 256px;
+              width: 256px;
+            }
+            .demo-gallery > ul > li a:hover > img {
+				
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+              height: 48px;
+              margin-left: -24px;
+              margin-top: -24px;
+              opacity: 0.8;
+              width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+              border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+              padding-bottom: 80px;
+            }
+			ul {
+			list-style: none;
+			}
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body class="home">
+        <div class="demo-gallery">
+		<a href="main"><<< Home Page</a>
+		<br><center>
+		This section contains sprays that can be used in Team Fortress 2, or most Source games. Clicking on the preview will enlarge the image and show the spray in full size. 
+		<br>
+		To download a spray, you can click on the download button located at the top-right corner of the screen (when previewing).
+		<br>
+		To use these Team Fortress 2, you must save the spray anywhere on your computer. Launch TF2, go to Options -> Multiplayer -> Import Spray. A folder explorer will show up. Navigate through the folders and select the spray on the location you've originally saved it, and then, press the Open button.
+		<hr>
+		</center>
+            <ul id="lightgallery">
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="tf2_sprays_img/spray_6.png" data-download-url="tf2_sprays_files/spray_6.vtf" data-sub-html="<b>Twilight Sparkle (My Little Pony: Friendship is Magic)</b>
+				<br><br>Artist: Amy Mebberson and aqua-pony
+				<br>Sources: <a href='http://amymebberson.com/portfolio.html'>http://amymebberson.com/portfolio.html</a> and <a href='https://www.deviantart.com/aqua-pony/art/Twilight-concept-colored-674255932'>https://www.deviantart.com/aqua-pony/art/Twilight-concept-colored-674255932</a>""">
+                    <a href="">
+                        <img class="img-responsive" src="tf2_sprays_img/spray_6.png">
+                    </a>
+                </li>					
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="tf2_sprays_img/spray_5.png" data-download-url="tf2_sprays_files/spray_5.vtf" data-sub-html="<b>Fluttershy (My Little Pony: Friendship is Magic)</b>
+				<br><br>Artist: sawberrykiss
+				<br>Source: <a href='https://www.deviantart.com/sawberrykiss/art/Chibi-Flutters-811775285'>https://www.deviantart.com/sawberrykiss/art/Chibi-Flutters-811775285</a>""">
+                    <a href="">
+                        <img class="img-responsive" src="tf2_sprays_img/spray_5.png">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="tf2_sprays_img/spray_4.png" data-download-url="tf2_sprays_files/spray_4.vtf" data-sub-html="<b>Felix Argyle (Re:Zero) and a representation of myself</b>
+				<br><br>Artist: picrew.me
+				<br>Source: <a href='https://picrew.me/image_maker/294/complete?cd=wQJCTZ7EpN'>https://picrew.me/image_maker/294/complete?cd=wQJCTZ7EpN</a>""">
+                    <a href="">
+                        <img class="img-responsive" src="tf2_sprays_img/spray_4.png">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="tf2_sprays_img/spray_3.png" data-download-url="tf2_sprays_files/spray_3.vtf" data-sub-html="<b>Felix Argyle (Re:Zero) and a representation of myself</b>
+				<br><br>Artist: picrew.me
+				<br>Source: <a href='https://picrew.me/image_maker/294/complete?cd=HDZlnLE8DK'>https://picrew.me/image_maker/294/complete?cd=HDZlnLE8DK</a>""">
+                    <a href="">
+                        <img class="img-responsive" src="tf2_sprays_img/spray_3.png">
+                    </a>
+                </li>	
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="tf2_sprays_img/spray_2.png" data-download-url="tf2_sprays_files/spray_2.vtf" data-sub-html="<b>Fluttershy (My Little Pony: Friendship is Magic)</b>
+				<br><br>Artist: CyanLightning
+				<br>Source: <a href='https://www.deviantart.com/cyanlightning/art/Fluttershy-Vector-37-Reading-and-Choco-812751635'>https://www.deviantart.com/cyanlightning/art/Fluttershy-Vector-37-Reading-and-Choco-812751635</a>""">
+                    <a href="">
+                        <img class="img-responsive" src="tf2_sprays_img/spray_2.png">
+                    </a>
+                </li>	
+                <li class="col-xs-6 col-sm-4 col-md-3" data-src="tf2_sprays_img/spray_1.png" data-download-url="tf2_sprays_files/spray_1.vtf" data-sub-html="<b>Demoman (Team Fortress 2)</b>
+				<br><br>Artist: Bobbin
+				<br>Source: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=301539578'>https://steamcommunity.com/sharedfiles/filedetails/?id=301539578</a>""">
+                    <a href="">
+                        <img class="img-responsive" src="tf2_sprays_img/spray_1.png">
+                    </a>
+                </li>	
+            </ul>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="../dist/js/lightgallery-all.min.js"></script>
+        <script src="../lib/jquery.mousewheel.min.js"></script>
+    </body>
+</html>
