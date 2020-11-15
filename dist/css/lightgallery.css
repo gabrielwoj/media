@@ -192,7 +192,7 @@
 }
 
 .lg-sub-html {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(53, 53, 53, 0.90);
   bottom: 0;
   color: #EEE;
   font-size: 16px;
@@ -895,7 +895,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   right: 0;
   bottom: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: #262626;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease 0s;
   -o-transition: opacity 0.15s ease 0s;
